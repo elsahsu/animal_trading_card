@@ -1,0 +1,61 @@
+body{
+  border: medium hidden currentcolor;
+/*   width: 400px; */
+}
+.wrapper {
+  max-width: 300px;
+  /* background-color: rgb(160, 131, 69); */
+  /*background-color: rgb(158, 71, 71);*/
+  background: url(http://images.all-free-download.com/images/graphiclarge/dog_footprints_background_colorful_repeating_outline_6828437.jpg);
+  opacity: 0.9;
+  /*  The 3 following command will ensure the whole image is included as a background*/
+  background-size: cover;                      /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 10px;
+  /*The max width is set to 300px as the images width should be and there is a padding of 10px added, the padding will be colored with the above color*/
+  border-radius: 10px;
+}
+.em {
+  font-style: italic;
+}
+span {
+  font-weight: bold;
+}
+.title {
+  padding: 5px 10% 3px 10%;
+  text-align:center;
+  font-size: 26px;
+}
+.image {
+  max-width: 99.6%;
+  /*the image will extend no more than 300 px pixels as that is the wrappers max width and I've set 100% for the image also because the max-width of the card is 300 px the info will automatically be aligned with the image*/
+  text-align: center;
+  /*display:block;*/
+  margin:auto;
+  /*The first two commands will center the image*/
+  /*If the width wasn't specified the display property would be neccesary for centering the image but it would have kept it's original width*/
+  /* padding: 5px 10% 15px 10%; */
+  border: 1px ridge rgba(61, 65, 61, 1);
+  border-radius: 10px;
+  /*makes the images edges look round*/
+  margin-bottom: 10px;
+}
+.info, h3 {
+  background-color: rgba(170, 200, 180, 0.8);
+  /* text-align:justify; */
+  border: 10px ridge rgba(61, 65, 61, 0.7);
+  /* The ridge value will will make the information window look raised*/
+  border-radius: 30px/10px;
+  /* it will give an eliptical shape: horizontal radius / vertical radius */
+  padding: 2px 2% 2px 6%;
+  /*margin: 0 20% 0 20%;*/
+}
+a:link, a:visited {
+    text-decoration: underline;
+    color: black;
+}
+.no_bullets {
+  list-style: none inside none;
+  padding-left: 0;
+}
